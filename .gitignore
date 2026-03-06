@@ -1,0 +1,58 @@
+# Virtual Environments
+venv/
+env/
+.venv
+ENV/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Models & Checkpoints (large files)
+models/
+logs/dqn_checkpoints/
+logs/ppo_checkpoints/
+logs/optuna_dqn_trial_*/dqn_checkpoints/
+logs/optuna_dqn_trial_*/ppo_checkpoints/
+
+# Training logs - exclude CSV files and trial checkpoints
+logs/**/*.csv
+logs/**/*.log
+logs/**/*.txt
+
+# Keep metrics JSON files and results - they're essential
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+*.ncrash
+.AppleDouble
+.LSOverride
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

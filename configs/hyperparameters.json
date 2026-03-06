@@ -1,0 +1,71 @@
+{
+    "environment": {
+        "name": "CyberBattleChain",
+        "chain_size": 4,
+        "library": "cyberbattlesim",
+        "max_episode_steps": 500,
+        "num_nodes": 6,
+        "observation_dim": 256,
+        "no_progress_threshold": 50,
+        "action_space": 64,
+        "action_types": ["local_exploit", "remote_exploit", "connect"]
+    },
+    "reward_shaping": {
+        "new_node_discovery": 20.0,
+        "step_penalty": -0.1,
+        "failed_action_penalty": -1.0,
+        "full_compromise_bonus": 100.0,
+        "theoretical_note": "Rescaled rewards from Section 3.2 of modified report"
+    },
+    "phase2_dqn_baseline": {
+        "algorithm": "DQN",
+        "total_timesteps": 50000,
+        "learning_rate": 1e-4,
+        "exploration_fraction": 1.0,
+        "exploration_initial_eps": 0.95,
+        "exploration_final_eps": 0.05,
+        "buffer_size": 5000,
+        "batch_size": 32,
+        "gamma": 0.99,
+        "train_freq": 4,
+        "net_arch": [32, 32],
+        "theoretical_note": "Epsilon-greedy decays from 0.95 to 0.05 over entire 50K steps (Section 2.2)"
+    },
+    "phase2_ppo_baseline": {
+        "algorithm": "PPO",
+        "total_timesteps": 50000,
+        "learning_rate": 3e-4,
+        "n_steps": 1024,
+        "batch_size": 64,
+        "n_epochs": 10,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "clip_range": 0.2,
+        "ent_coef": 0.0,
+        "vf_coef": 0.5,
+        "max_grad_norm": 0.5,
+        "net_arch": {"pi": [32, 32], "vf": [32, 32]},
+        "theoretical_note": "Baseline PPO WITHOUT entropy regularization (beta=0) from Section 2.3"
+    },
+    "phase3_dqn_search_space": {
+        "learning_rate": [1e-5, 1e-3],
+        "exploration_fraction": [0.05, 0.30],
+        "epsilon_final": [0.01, 0.10],
+        "n_trials": 25
+    },
+    "phase3_ppo_search_space": {
+        "learning_rate": [1e-5, 1e-3],
+        "ent_coef": [1e-3, 1e-1],
+        "n_trials": 25
+    },
+    "evaluation": {
+        "num_episodes": 10,
+        "deterministic": true
+    },
+    "reproducibility": {
+        "python_version": "3.11",
+        "stable_baselines3": ">=2.0.0",
+        "optuna": ">=3.0.0",
+        "seed": 42
+    }
+}

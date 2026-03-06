@@ -1,0 +1,69 @@
+{
+  "algorithm": "dqn",
+  "n_trials": 25,
+  "best_trial": {
+    "number": 0,
+    "objective_value": -Infinity,
+    "hyperparameters": {
+      "learning_rate": 5.6115164153345e-05,
+      "exploration_fraction": 0.28767857660247903,
+      "epsilon_final": 0.07587945476302646
+    },
+    "user_attrs": {}
+  },
+  "top_5_configs": [
+    {
+      "rank": 1,
+      "objective": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 5.6115164153345e-05,
+        "exploration_fraction": 0.28767857660247903,
+        "epsilon_final": 0.07587945476302646
+      },
+      "user_attrs": {}
+    },
+    {
+      "rank": 2,
+      "objective": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 0.00015751320499779721,
+        "exploration_fraction": 0.08900466011060913,
+        "epsilon_final": 0.02403950683025824
+      },
+      "user_attrs": {}
+    },
+    {
+      "rank": 3,
+      "objective": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 1.3066739238053272e-05,
+        "exploration_fraction": 0.2665440364437338,
+        "epsilon_final": 0.0641003510568888
+      },
+      "user_attrs": {}
+    },
+    {
+      "rank": 4,
+      "objective": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 0.0002607024758370766,
+        "exploration_fraction": 0.055146123573950614,
+        "epsilon_final": 0.0972918866945795
+      },
+      "user_attrs": {}
+    },
+    {
+      "rank": 5,
+      "objective": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 0.000462258900102083,
+        "exploration_fraction": 0.10308477766956904,
+        "epsilon_final": 0.02636424704863906
+      },
+      "user_attrs": {}
+    }
+  ],
+  "study_name": "optuna_dqn_study_20260305_132102",
+  "storage": "sqlite:///logs/optuna_dqn.db",
+  "timestamp": "2026-03-05T13:21:02.696563"
+}

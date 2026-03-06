@@ -1,0 +1,202 @@
+{
+  "agent_name": "ppo",
+  "total_episodes": 14,
+  "total_steps": 5108,
+  "episode_rewards": [
+    -4.899997286498547,
+    36.60000432282686,
+    -108.00000688433647,
+    -103.29999657720327,
+    -25.300001740455627,
+    27.800002671778202,
+    -130.00000381469727,
+    -164.50000508874655,
+    -211.00000470876694,
+    -148.1000021994114,
+    9.500000841915607,
+    107.70000436902046,
+    63.99999902397394,
+    -63.59999939799309
+  ],
+  "episode_lengths": [
+    292,
+    218,
+    447,
+    491,
+    316,
+    224,
+    517,
+    414,
+    450,
+    510,
+    239,
+    331,
+    442,
+    217
+  ],
+  "exploration_metrics": [
+    {
+      "episode": 1,
+      "value": 5.545177459716797,
+      "type": "entropy"
+    },
+    {
+      "episode": 2,
+      "value": 5.5451765060424805,
+      "type": "entropy"
+    },
+    {
+      "episode": 3,
+      "value": 5.5450663566589355,
+      "type": "entropy"
+    },
+    {
+      "episode": 4,
+      "value": 5.5448455810546875,
+      "type": "entropy"
+    },
+    {
+      "episode": 5,
+      "value": 5.544441223144531,
+      "type": "entropy"
+    },
+    {
+      "episode": 6,
+      "value": 5.54457950592041,
+      "type": "entropy"
+    },
+    {
+      "episode": 7,
+      "value": 5.543887615203857,
+      "type": "entropy"
+    },
+    {
+      "episode": 8,
+      "value": 5.54309606552124,
+      "type": "entropy"
+    },
+    {
+      "episode": 9,
+      "value": 5.542303085327148,
+      "type": "entropy"
+    },
+    {
+      "episode": 10,
+      "value": 5.541067600250244,
+      "type": "entropy"
+    },
+    {
+      "episode": 11,
+      "value": 5.541593551635742,
+      "type": "entropy"
+    },
+    {
+      "episode": 12,
+      "value": 5.540393352508545,
+      "type": "entropy"
+    },
+    {
+      "episode": 13,
+      "value": 5.538572311401367,
+      "type": "entropy"
+    },
+    {
+      "episode": 14,
+      "value": 5.540677070617676,
+      "type": "entropy"
+    }
+  ],
+  "training_metrics": [
+    {
+      "episode": 1,
+      "reward": -4.899997286498547,
+      "length": 292,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 2,
+      "reward": 36.60000432282686,
+      "length": 218,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 3,
+      "reward": -108.00000688433647,
+      "length": 447,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 4,
+      "reward": -103.29999657720327,
+      "length": 491,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 5,
+      "reward": -25.300001740455627,
+      "length": 316,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 6,
+      "reward": 27.800002671778202,
+      "length": 224,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 7,
+      "reward": -130.00000381469727,
+      "length": 517,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 8,
+      "reward": -164.50000508874655,
+      "length": 414,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 9,
+      "reward": -211.00000470876694,
+      "length": 450,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 10,
+      "reward": -148.1000021994114,
+      "length": 510,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 11,
+      "reward": 9.500000841915607,
+      "length": 239,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 12,
+      "reward": 107.70000436902046,
+      "length": 331,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 13,
+      "reward": 63.99999902397394,
+      "length": 442,
+      "exploration_type": "entropy"
+    },
+    {
+      "episode": 14,
+      "reward": -63.59999939799309,
+      "length": 217,
+      "exploration_type": "entropy"
+    }
+  ],
+  "statistics": {
+    "mean_reward": -50.93571474775672,
+    "std_reward": 92.20880762485947,
+    "max_reward": 107.70000436902046,
+    "min_reward": -211.00000470876694,
+    "mean_length": 364.85714285714283
+  }
+}
