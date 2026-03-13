@@ -1,0 +1,89 @@
+{
+  "algorithm": "ppo",
+  "phase": 3,
+  "n_trials": 5,
+  "best_trial": {
+    "number": 0,
+    "objective_value": -Infinity,
+    "hyperparameters": {
+      "learning_rate": 5.6115164153345e-05,
+      "ent_coef": 0.07969454818643933,
+      "clip_range": 0.2329984854528513
+    },
+    "metrics": {}
+  },
+  "top_5_configs": [
+    {
+      "rank": 1,
+      "trial_number": 0,
+      "objective_value": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 5.6115164153345e-05,
+        "ent_coef": 0.07969454818643933,
+        "clip_range": 0.2329984854528513
+      },
+      "metrics": {}
+    },
+    {
+      "rank": 2,
+      "trial_number": 1,
+      "objective_value": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 0.00015751320499779721,
+        "ent_coef": 0.0020513382630874496,
+        "clip_range": 0.08899863008405066
+      },
+      "metrics": {}
+    },
+    {
+      "rank": 3,
+      "trial_number": 2,
+      "objective_value": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 1.2150104649007388e-05,
+        "ent_coef": 0.07340472227986773,
+        "clip_range": 0.2788099932161054
+      },
+      "metrics": {}
+    },
+    {
+      "rank": 4,
+      "trial_number": 3,
+      "objective_value": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 3.1568261225366804e-05,
+        "ent_coef": 0.09284987809651234,
+        "clip_range": 0.23674668796813472
+      },
+      "metrics": {}
+    },
+    {
+      "rank": 5,
+      "trial_number": 4,
+      "objective_value": -Infinity,
+      "hyperparameters": {
+        "learning_rate": 0.0008308860966122071,
+        "ent_coef": 0.016110558588614335,
+        "clip_range": 0.1609621331528477
+      },
+      "metrics": {}
+    }
+  ],
+  "study_name": "optuna_ppo_study_20260306_144157",
+  "storage": "sqlite:///logs/optuna_ppo.db",
+  "timestamp": "2026-03-07T16:18:42.312764",
+  "search_space": {
+    "learning_rate": "[1e-5, 1e-3] log scale",
+    "ent_coef": "[1e-3, 1e-1] log scale",
+    "clip_range": "[0.05, 0.3] linear scale"
+  },
+  "fixed_hyperparameters": {
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5
+  }
+}

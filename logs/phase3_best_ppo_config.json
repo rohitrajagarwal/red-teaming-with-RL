@@ -1,0 +1,20 @@
+{
+  "algorithm": "ppo",
+  "phase": 3,
+  "source": "optuna_best_trial",
+  "trial_number": 0,
+  "objective_value": -Infinity,
+  "training_metrics": {},
+  "hyperparameters": {
+    "learning_rate": 5.6115164153345e-05,
+    "ent_coef": 0.07969454818643933,
+    "clip_range": 0.2329984854528513,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5
+  }
+}

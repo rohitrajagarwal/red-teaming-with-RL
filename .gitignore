@@ -22,12 +22,13 @@ logs/ppo_checkpoints/
 logs/optuna_dqn_trial_*/dqn_checkpoints/
 logs/optuna_dqn_trial_*/ppo_checkpoints/
 
-# Training logs - exclude CSV files and trial checkpoints
+# Training logs - exclude CSV files, log files, and trial checkpoints
 logs/**/*.csv
 logs/**/*.log
 logs/**/*.txt
+logs/**/*.db
 
-# Keep metrics JSON files and results - they're essential
+# Keep metrics JSON files and results - they're essential for GitHub
 
 # Jupyter
 .ipynb_checkpoints/
